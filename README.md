@@ -4,7 +4,7 @@
 
 ---
 
-Some functions commonly used in PLCs sometimes are needed in the Arduino platfom.
+Some functions commonly used in PLCs sometimes are needed in the Arduino platform.
 
 Here you can find some of them.
 
