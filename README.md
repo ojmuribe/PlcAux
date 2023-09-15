@@ -10,6 +10,10 @@ Here you can find some of them.
 
 ---
 
+NOTE: this library is already included in the [ESPPlcTimer](https://github.com/ojmuribe/ESPPlcTimer) library
+
+---
+
 ## USAGE
 
 Add the library **"PlcAux.h"** in your project.
