@@ -44,7 +44,7 @@ An auxiliary static bool must to be assigned to prev.
 
 Example:
 
-    static bool aux;
+    static bool prev;
     if (edgeDown(digitalRead(GPIO_NUM_13, prev))){
       Serial.println("Falling edge detection");
     }
