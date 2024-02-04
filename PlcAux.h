@@ -8,6 +8,9 @@ bool edgeUp(bool input, bool &prev);
 // Falling edge of a boolean input
 bool edgeDown(bool input, bool &prev);
 
+// Change status detection
+bool changeStatus(bool input, bool &prev);
+
 // Symmetrical pulse of interval ms
 bool sqPulse(uint32_t interval);
 
@@ -60,6 +63,18 @@ bool edgeDown(bool input, bool &prev)
   {
     out = true;
   }
+  prev = input;
+  return out;
+}
+
+// Change status detection
+bool changeStatus(bool input, bool &prev)
+{
+  bool out;
+
+  out = false;
+  if (input != prev)
+    out = true;
   prev = input;
   return out;
 }
