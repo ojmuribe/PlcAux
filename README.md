@@ -51,6 +51,22 @@ Example:
 
 ---
 
+### changeStatus //change status detection
+
+    bool changeStatus(bool input, bool &prev);
+
+Returns a boolean value that is true one CPU cycle if the input have changed.
+An auxiliary static bool must to be assigned to prev.
+
+Example:
+
+    static bool prev;
+    if (changeStatus(digitalRead(GPIO_NUM_13), prev)){
+      Serial.println("Change status detection");
+    }
+
+---
+
 ### sqPulse //Symmetrical pulse 
 
     bool sqPulse(uint32_t interval);
